@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Words</title>
+</head>
+<body>
+    <script>
+        function reverseWords(sentence) {
+            function reverseWords(sentence) {
+    // Split the sentence into words using space as the delimiter
+    const words = sentence.split(' ');
+  
+    // Initialize an empty array to store the reversed words
+    const reversedWords = [];
+  
+    // Iterate through the words and reverse each one
+    for (const word of words) {
+      // Initialize an empty string to store the reversed word
+      let reversedWord = '';
+  
+      // Iterate through the characters of the word in reverse order
+      for (let i = word.length - 1; i >= 0; i--) {
+        reversedWord += word[i];
+      }
+  
+      // Push the reversed word to the array
+      reversedWords.push(reversedWord);
+    }
+  
+    // Join the reversed words back into a sentence using space as the separator
+    const reversedSentence = reversedWords.join(' ');
+  
+    return reversedSentence;
+  }
+  
+  // Example usage
+  const inputSentence = "This is a sunny day";
+  const reversedSentence = reverseWords(inputSentence);
+  console.log(reversedSentence); // Output: "sihT si a ynnus yad"
+  
+        }
+
+        // Example usage
+        const inputSentence = "This is a sunny day";
+        const reversedSentence = reverseWords(inputSentence);
+        console.log(reversedSentence);
+    </script>
+</body>
+</html>
